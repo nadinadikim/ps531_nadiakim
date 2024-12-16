@@ -1,0 +1,416 @@
+---
+title: "Final Paper"
+author: "Nadia Kim"
+affiliation: University of Illlinois Urbana-Champaign
+email: nadiak2@illinois.edu
+date: 2024/04/10
+format: html
+editor: visual
+bibliography: references.bib
+csl: apa-6th-edition.csl
+tbl-cap-location: top
+mainfont: "Times New Roman"
+---
+
+1.  Describe a substantive question in social science. What theory are you (or the author of the paper you are replicating) assessing? Why should anyone care? (2 paragraphs)
+
+The primary aim of this research is to investigate the long-term effect of redlining on disparities in public education funding. Therefore, the substantive question addressed in this research is: How does the spatial legacy of redlining affect education funding disparities in urban public schools? In this research, I am assessing path dependency theory, which examines how historical conditions and institutional legacies influence present-day outcomes. Path dependence theory suggests that once a particular policy path is chosen, it can create self-reinforcing mechanisms, such as positive feedback, that make it difficult to alter course, thus generating patterns of historical development, the "lock-in" effects [@pierson2004politics; @sorensen2015Taking]. By applying path dependence theory, I seek to uncover how these historical lock-in effects of discriminatory spatial policy of redlining sustain and reproduce patterns of education funding disparities in urban public schools today.
+
+This theoretical lens matters because it reveals that the inequalities and associated social problems we see are not merely the result of individual decisions or market conditions. Instead, they are rooted in and perpetuated by the institutional trajectories set into motion long ago. Recognizing this helps policymakers, educators, and advocates think beyond quick fixes, understanding that any reforms or interventions must address the deep-seated structural continuities at play. Ultimately, by acknowledging how past policies lock-in the spatial and social patterns, we can design more effective, long-range strategies that are reparative and restorative and target inherited inequities and while advancing educational and spatial justice.
+
+2.  The study you propose involves learning about a theory by observing certain of its implications. What one or two hypotheses that arise from the theory are you planning to assess (or does the author of the paper you are replicating assess)? Why or how does the theory justify your expectations about these hypotheses? (1 or 2 paragraphs)
+
+From this study, two hypotheses can be drawn by applying path dependency theory.
+
+$H_1$: Schools with a higher proportion of their attendance zone overlapping historically redlined neighborhoods operate with, on average, lower levels of per-student funding than schools with a lower proportion of redlined exposure.
+
+$H_2$: Per-student funding disparities between schools with higher and lower proportions of their attendance zones overlapping historically redlined neighborhoods have widened over time, despite the introduction of policies aimed at reducing educational inequalities.
+
+Both hypotheses follow the logic of path dependence, which suggests that early institutional arrangements and policy decisions bring about feedback loops that reinforce and perpetuate patterns of development, here, inequalities.
+
+Path dependence theory justifies these expectations by emphasizing how initial conditions, once established, create self-reinforcing cycles. In this case, early discriminatory housing practices influenced neighborhood wealth, local tax bases, and political processes that determine how funds are distributed to schools. While property taxes in large urban districts like Chicago are pooled at the district level, the legacy of redlining still affects school funding indirectly through mechanisms such as persistent economic instability, low student enrollment, and diminished community resources limiting schools’ access to both private fundraising and sustained political advocacy. The result is a self-reinforcing cycle where lower enrollment and community wealth lead to school closures, further disinvestment, and reduced educational opportunities for students. Thus, path dependence helps explain how these disparities become ‘locked in’ and difficult to reverse and why interventions aimed at equalizing school funding or improving educational opportunities often fail to break these entrenched patterns.
+
+3.  What data and research design will help you answer this question? Why are you making these choices? (Remember that a statistical model is not a research design.) (2 paragraphs)
+
+There are many ways to approach the research questions I raise in my study depending on the geographical scale. My research will take place in Chicago that is served by a single public school district: Chicago Public Schools (CPS), officially designated as City of Chicago School District #299, and following research design and data are proposed to accommodate this specific research setting.
+
+1\) Data: To answer the research question, I will first assemble a rich dataset that links historical HOLC redlining data to current school attendance zones, along with longitudinal school-level funding information. The Home Owner's Loan Corporation (HOLC) redlining data will be retrieved from the University of Richmond Digital Scholarship Lab's Mapping inequality database. Data on Chicago Public Schools including school locations and school attendance boundaries will be retrieved from Chicago Data Portal. Data on longitudinal school-level information such as student demographics instructional settings, district staffing, finance, and state assessments will be retrieved from the Illinois State Board of Education (ISBE) Report Card Data Library. ISBE Report Card Data Library made report card up to 1996 available for online download on their website, and the earlier year's school information will be retrieved my visiting CPS archives or the Chicago City Archives that house historical financial documents. Using GIS, I will combine these spatial and non-spatial data. Specifically, I will calculate the proportion of each school's attendance zone that overlaps with historically redlined neighborhoods and their grading, resulting in a continuous measure of redlining grading. These combined data will then merged with demographic, socio-economic, and other contextual variables at the school level. This apprroach is chosen because it better reflects the complex spatial reality---where attendance zones of privileged schools often match up with higher grading areas from the HOLC maps---and allows me to capture the relationship between past discriminatory lending practices to schools' capacities of today. In addition, by including demographic, socioeconomic, and other contextual variables, I can better isolate the influence of historical redlining from other factors that may affect school funding, hence enhance the robustness of the analysis.
+
+2\) Research Design: To establish a stronger foundation for causal inference, I will use a matching approach that pairs schools with similar demographic and socioeconomic characteristics but differing levels of historical HOLC grading within their attendance zones. This approach ensures that any differences in funding are not simply due to other associated characteristics---often referred to as "observable confounders", the factors that can otherwise explain funding disparities unrelated to historical grading. By matching schools on these observable confounders, I ensure that the comparison more closely resembles a scenario where the primary difference between matched schools is their historical neighborhood labels. Then, to analyze how funding disparities tied to redlining evolve over time, and how they evolve as equity-oriented policies are introduced, I will employ a longitudinal panel design centered on a matching-based method, PanelMatch, that estimates causal effects in time-series data with dynamic, time-varying treatments. This design allows me to track how redlining grading influences school funding over time, capturing both immediate and long-term effects. By matching schools with similar prior conditions, I can better isolate the influence of redlining exposure on funding disparities. I will pay a particular attention to 2013 and 2017 as those are the time education funding reforms such as Student-Based Budgeting (SBB) and Evidenced-Based Funding (EBF) are introduced. The implementation of matching on both cross-sectional and longitudinal analysis provides a more rigorous and comprehensive strategy for identifying how historical neighborhood grading continues to shape educational funding.
+
+4.  What are the advantages and disadvantages of this research design to addressing the substantive question? (2 paragraphs discussing **both** advantages and disadvantages of the research design; could be 1 paragraph for advantages and 1 for disadvantages or combined discussion across 2 paragraphs.)
+
+1\) Advantages: One of the primary advantages of this research design is its ability to account for both cross-sectional and longitudinal differences in redlining legacy, allowing for a comprehensive analysis of how disparities in school funding evolve over time. By using a matching approach to pair schools with similar demographic and socioeconomic characteristics but different levels of historical HOLC grading, the design reduces confounding and strengthens causal inference. This approach ensures that any observed differences in funding are not a reflection of other unobserved characteristics. Additionally, the longitudinal component captures how disparities evolve in response to key education reforms, such as SBB in 2013 an EBF in 2017. This temporal dimension offers a clearer understanding of whether funding gaps persist, widen, or narrow over time, especially after policy changes. Furthermore, the use of a matching for longitudinal analysis over traditional models like fixed effects or difference-in-differences present several advantages, allowing for more flexible treatment modeling, capturing cumulative, lagged, and heterogeneous treatment effects [@xu2023causal]. First, it aligns with the path dependency framework, which emphasizes how past conditions shape present outcomes. This alignment allows for a clearer understanding of how redlining's legacy continues to influence school funding in the present. Additionally, the method can handle dynamic treatment effects, which is essential because redlining exposure is not static; exposure can change over time as neighborhoods evolve. Unlike other methods that assume static treatment effects, this approach captures such fluctuations. Another significant advantage is that this approach avoids the strict exogeneity assumption required by other models. Instead, it accounts for the possibility that past funding disparities might influence current assignments of policy interventions. Finally, this method allows for the estimation of long-term effects, making it possible to track changes in funding disparities over multiple time points. This capability is crucial for understanding if disparities persist, widen, or narrow over time, particularly in response to equity-focused policies. For these reasons, my research design provides a robust and comprehensive framework for analyzing the evolution of funding disparities caused by redlining.
+
+2\) Disadvantages: However, the research design also presents certain limitations. Matching methods, while effective in reducing observable confounding, cannot account for unobserved confounders, which may still bias the results. For example, differences in unmeasured community activism or local advocacy for school funding could influence both redlining legacy and funding outcomes, leading to residual confounding. Another limitation is the loss of data due to the matching process, as not all schools may have suitable matches, potentially reducing statistical power. Additionally, while the PanelMatch approach accounts for evolving exposure to redlining, it requires strong assumptions about treatment effects and the availability of high-quality longitudinal data. The reliance on administrative data from the Illinois State Board of Education (ISBE) and other sources could pose challenges if there are inconsistencies or missing data over time. Despite these limitations, the combination of cross-sectional and longitudinal matching provides a rigorous framework for understanding the enduring impact of redlining on educational funding disparities.
+
+5.  Describe your measures and any indices you or the authors constructed. (1 paragraph)
+
+To measure redlining grading's influence on school funding, I will construct several key indices and measures that align with the theoretical and methodological framework of the study.
+
+1\) Redlining Grading Index: This measure is calculated as the proportion of school's attendance zone that overlaps with historically redlined neighborhoods, based on the HOLC grading. The overlapping area is weighted by the level of grading (e.g., "D" areas are given a higher weight than "C" or "B" areas) to capture the severity of the grading. This redlining grading index, redlining intensity score, can be expressed as:
+
+$$
+Redlining \ Intensity = 4 \cdot (\%Red) + 3 \cdot (\%Yellow) + 2 \cdot (\%Green) + 1 \cdot (\%Blue)
+$$
+
+For example, a school with 30% of its attendance zone overlapping with a "Red" area and 50% overlapping with a "Yellow" area is
+
+$$
+Redlining \ Intensity \ of \ X \ school = 4 \cdot (0.3) + 3 \cdot (0.5) = 2.7
+$$
+
+2\) Funding Disparities Measure: School funding data is captured at the per-student level using financial records from the Illinois State Board of Education (ISBE) Report Card. I will calculate the annual per-student funding for each school and track changes over time. This measure allows for the assessment of funding disparities between schools with high and low redlining grading.
+
+3\) Temporal Policy Reform Indicators: To assess the impact of key policy changes, such as the implementation of Student-Based Budgeting (SBB) in 2013 and Evidence-Based Funding (EBF) in 2017, I will construct binary indicators for these policy shifts. These indicators mark the years when the policies were implemented, allowing for the examination of whether these changes led to shifts in funding disparities.
+
+4\) Demographic and Socioeconomic Controls: To strengthen the matching process and reduce confounding, I will include variables that capture school-level demographics and socioeconomic characteristics. These variables include student racial/ethnic composition, the proportion of students eligible for free or reduced-price lunch (FRPL), and student-teacher ratios derived from census data. Including these variables in the matching procedure ensures that differences in funding are not simply due to these observable characteristics.
+
+5\) Longitudinal Disparities Index: This index tracks the changes in funding disparities for schools with high and low redlining exposure over time. The Longitudinal Disparities Index (LDI) is calculated as the relative difference in per-student funding between high-exposure and low-exposure groups. The Longitudinal Disparities Index (LDI) is calculated as follows: $LDI_t = \frac{\bar{F}_t^{(HE)} - \bar{F}_t^{(LE)}}{\bar{F}_t^{(LE)}}$, where $\bar{F}_t^{(HE)}$ is the mean per-student funding for high-exposure schools and $\bar{F}_t^{(LE)}$ is the mean per-student funding for low-exposure schools in year $t$.
+
+6.  Use data to make the case that your research design allows you to interpret observed quantities (like observed data comparisons or parameters of models fit to data) as theoretically relevant and clear: (Most people will only have to do either 6.1 and 6.2 **or** 6.3 and 6.4 here depending on whether you have a randomized design or an observational design).
+
+    1.  **If you are using an observational study design** then explain how you will make the case for interpretable comparisons (this is the same as question as 'What is your identification strategy?'). That is, explain how you will use statistical adjustment (like matching or covariance adjustment aka "controlling for") to persuade yourself and others that the comparison that you are showing reflects what you say it does. If you are making comparative or causal inference, I assume you will explain the natural or quasi-experimental design and approach you will be using here. "I controlled for a lot of background variables in a linear model." will not be acceptable here. If you are making population inferences, you should explain your approach as well. (2 paragraphs plus some tables or figures)
+
+To ensure interpretable comparisons and support causal inference, I will use a matching method combined with a longitudinal panel design. The key identification strategy involves matching schools on pre-treatment covariates, including socioeconomic characteristics, racial composition, student-teacher ratios, and other school-level characteristics. This matching ensures that schools being compared are similar in observable characteristics, with the only meaningful difference being the degree of historical exposure to redlining. To capture the dynamic impact of redlining over time, I will track how school funding disparities evolve following the implementation of major policy reforms such as SBB and EBF.
+
+The use of a matching-based approach controls for observable confounding, ensuring that the analysis compares schools that were similar before treatment but experienced different levels of historical redlining influence. The longitudinal design allows for tracking changes in funding disparities over time, providing evidence of whether policy changes reduce, maintain, or exacerbate disparities. This strategy avoids the strict exogeneity assumption required by traditional fixed-effect models and instead operates under the assumption of sequential ignorability, which allows for past funding disparities to influence present outcomes. By using a dynamic, time-varying matching approach, I ensure that the causal effect of policy interventions is estimated more accurately, capturing immediate and lagged effects on funding disparities.
+
+```{r hypotheticalcovariatebalance}
+# Load necessary packages
+#install.packages("knitr")
+#install.packages("dplyr")
+library(knitr)  
+library(dplyr)  
+
+# Covariate balance data
+covariate_balance <- tibble::tibble(
+  Variable = c("Low-Income %", 
+               "Student-Teacher Ratio", 
+               "Black Student %", 
+               "Hispanic Student %", 
+               "School Size (Enrollment)", 
+               "Per-Student Funding (Pre-Policy)"),
+  `Before Matching (High vs. Low Redlining)` = c("80% vs 40%", 
+                                                 "20:1 vs 18:1", 
+                                                 "70% vs 20%", 
+                                                 "10% vs 30%", 
+                                                 "600 vs 700", 
+                                                 "$10,500 vs $12,000"),
+  `After Matching (High vs. Low Redlining)` = c("75% vs 74%", 
+                                                "19:1 vs 18.9:1", 
+                                                "65% vs 63%", 
+                                                "12% vs 12%", 
+                                                "610 vs 605", 
+                                                "$10,800 vs $10,900")
+)
+
+# Create table
+kable(covariate_balance, 
+      caption = "Hypothetical Covariate Balance Before and After Matching", 
+      col.names = c("Variable", "Before Matching", "After Matching"), 
+      format = "html", 
+      align = c("l", "c", "c"))
+```
+
+```{r identificationflowchart}
+#install.packages("DiagrammeR")
+library(DiagrammeR)
+
+grViz("
+digraph identification_strategy {
+  graph [label = 'Identification Strategy Flowchart', fontsize = 20, labelloc = 't']
+  
+  node [fontname = Helvetica, shape = box, style = filled, color = lightblue]
+
+  A [label = 'Start: Identify Treated Schools (High Redlining)']
+  B [label = 'Identify Control Schools (Low Redlining)']
+  C [label = 'Match Schools on Covariates (SES, FRPL, Racial Composition, etc.)']
+  D [label = 'Estimate Effect of SBB on LDI']
+  E [label = 'Estimate Effect of EBF on LDI']
+  F [label = 'Track Funding Disparities Over Time']
+
+  A -> C
+  B -> C
+  C -> D [label = '2013 SBB Policy']
+  C -> E [label = '2017 EBF Policy']
+  D -> F
+  E -> F
+
+}
+")
+```
+
+```{r hypotheticalimpactofreforms}
+# Load necessary packages
+#install.packages("ggplot2")
+library(ggplot2)
+
+# Data for years and hypothetical LDI values
+years <- 2008:2023
+ldi_values <- c(0.20, 0.20, 0.21, 0.21, 0.22, 0.23, 0.24, 0.24, 0.25, 0.26, 
+                0.26, 0.27, 0.28, 0.28, 0.29, 0.29)  # Gradual increase due to feedback effects
+
+# Key reform years
+sbb_year <- 2013
+ebf_year <- 2017
+
+# Create a data frame
+ldi_data <- data.frame(
+  Year = years,
+  LDI = ldi_values
+)
+
+# Create the plot
+ggplot(ldi_data, aes(x = Year, y = LDI)) +
+  geom_line(color = 'steelblue', size = 1.2) +
+  geom_point(color = 'steelblue', size = 3) +
+  geom_vline(xintercept = sbb_year, linetype = "dashed", color = "red", size = 1) +
+  geom_vline(xintercept = ebf_year, linetype = "dashed", color = "green", size = 1) +
+  annotate("text", x = sbb_year + 0.5, y = 0.23, label = "SBB Implemented", color = "red", size = 4) +
+  annotate("text", x = ebf_year + 0.5, y = 0.27, label = "EBF Implemented", color = "green", size = 4) +
+  labs(
+    title = "Hypothetical Impact of 2013 SBB and 2017 EBF Reforms on LDI (Path Dependence & Feedback Effects)",
+    x = "Year",
+    y = "LDI (Longitudinal Disparities Index)"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.major = element_line(size = 0.1, linetype = 'dashed', color = 'grey'),
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold")
+  )
+```
+
+```         
+2.  **If you are using an observational study design**, explain how you will judge the success of your adjustment strategy. For example, you may explain here about balance tests and other diagnostics that refer to the problem of adjustment for confounding or making the case for an as-if-randomized comparison, or an as-if-randomly sampled set of observations, etc.. (1 paragraph)
+```
+
+To judge the success of my adjustment strategy, I will first compare the treatment (High redlining grading) and control (low redlining grading) groups on key pre-treatment covariates, such as SES, racial composition, and prior funding. I will compute standardized mean differences (SMDs) for each covariate and ensure that all SMDs are below 0.1, a common threshold for balance. I will provide a covariate balance table that shows mean differences before and after matching. Additionally, I will conduct formal statistical tests, t-tests, to ensure that the covariates do not differ between the treatment and control groups after matching. Then, I will assess whether each treated school has a comparable control unit by examining distance scores and visualizing the distribution of distances. Any unmatched units will be reported, and the implications of discarding those units will be discussed. Finally, I will conduct a sensitivity analysis to assess the potential impact of unobserved confounding using Rosenbaum bounds. If all those listed tests indicate that strong unobserved confounding would be required to change the results, I will conclude that the adjustment strategy has successfully created an "as-if randomized" comparison.
+
+```         
+3.  **If you are using an randomized study design**, explain how the experiment will help you make the case for interpretable comparisons. What counter arguments and/or weaknesses of your approach might you expect? (For example, how will you think about Hawthorne effects or alternative explanations of your results arising from crticisms of your measurement and conceptualization strategy or missing data problems.) (1 paragraph)
+
+4.  **If you are using a randomized study design**, explain how you will know that your randomization and/or other aspects of your design turned out as they should (for example, you might explain about randomization tests here). (1 paragraph)
+```
+
+7.  Explain your plans for any missing data or extreme outcome or covariate values you may encounter when you get the real data (or perhaps you have the background data but not the real outcomes, so you can explain your plans for such data issues in that case here too). (1 or 2 paragraphs)
+
+To address potential issues with missing data or extreme values, I will take a systematic approach to ensure data quality and the robustness of my findings. For missing covariate data, I will first assess the extent and pattern of missingness. If the amount of missing data for a covariate me small, such as less than 5%, I will apply mean or media imputation for continuous covariates. For more substantial missingness or if the data appears to be missing in a systematic pattern, I will use multiple imputation with chained equations [@white2011multiple] to ensure that the uncertainty from imputation is incorporated into subsequent analyses. If a critical covariate required for matching (like SES or prior funding) is missing for many observations, I will treat missingness as an indicator variable and evaluate its relationship with other predictors, as missingness itself may convey meaningful information. For outcome data, per-student funding, that is missing for certain school-years, I will assess whether the missingness is related to observable covariates.If it is missing at random, I will impute values using multiple imputation. If missingness is not at random and driven by systematic factors like school closures, I will document this, adjust the analysis accordingly, and discuss its implications in the limitations section.
+
+For extreme values in covariates or outcomes, I will identify outliers using z-scores (3 standard deviations from the mean). If the outliers are valid data points such as elite schools with exceptionally high funding, I will keep them, as they may provide meaningful context for heterogeneity in school resources. If outliers are clear data entry errors like negative funding amounts, I will address these through data correction or removal. I will also conduct robustness checks by running analyses with and without extreme values to determine if the results are sensitive to these influential points. If the conclusions are sensitive to the removal of extreme values, I will report this and discuss how it affects the generalizability of my findings. This comprehensive approach to handling missing data, extreme values, and potential data quality issues will ensure that my final analysis is transparent, robust, and reproducible.
+
+8.  What statistical tests do you plan to use? Explain why you chose these tests and any decision making criteria you will use upon seeing the results of the tests. You should also engage with the problem of multiple testing here if you are going to show the results of more than one test. (Recall that confidence intervals and hypothesis tests convey more or less the same information. So a confidence interval is a form of testing.) (1 paragraph)
+
+I plan to use statistical tests aligned with the OptMatch and PanelMatch frameworks to evaluate the influence of redlining on total per-student funding. For the cross-sectional analysis, I will test for differences in total per-student funding between schools with higher and lower historical redlining grading using t-tests and 95% confidence intervals. This approach allows me to directly assess whether the differences in funding between the high redlining intensity groups and low redlining intensity groups is unlikely to be due to random chance, demonstrating a discernible pattern for each group. For the longitudinal analysis, I will estimate dynamic treatment effects using PanelMatch, which generates treatment effect estimates at multiple time lags (e.g., 1-year, 2-year, and 3-year post-reform). For each time-lagged effect, I will compute confidence intervals and use them to assess whether the estimated treatment effect differs from zero. If the confidence interval does not contain zero, I will reject the null hypothesis of no treatment effect. To account for multiple hypothesis tests, given that I will be testing multiple time-lagged effects, I will apply a False Discovery Rate (FDR) correction using the Benjamini-Hochberg procedure. This approach controls for Type I errors while preserving statistical power. The FDR correction is appropriate since I will be testing multiple hypotheses that are conceptually related (treatment effects over multiple time lags) and because it offers a less conservative approach than family-wise error rate (FWER) corrections like Bonferroni [@thissen2002quick; @waite2006controlling].
+
+9.  Explain how you will judge the performance of those tests. Will you only use simple false positive rate and power? Or do you need to add family-wise error rate? false discovery rate? Or something else? Explain why you made this choice. (1 paragraph)
+
+I will judge the performance of these tests using multiple criteria, including the false positive rate, statistical power, and the appropriateness of the multiple testing correction strategy. For the cross-sectional analysis, I will track the Type I error rate by ensuring that the tests maintain an error rate close to the nominal 5% level when the null hypothesis is true. For the longitudinal analysis, where multiple time-lagged effects are tested, I will evaluate whether the FDR correction appropriately controls the proportion of false positives. I will assess this using simulated data under the null hypothesis to check if the false discovery rate is maintained at or below the target level (e.g., 5%). I will also assess statistical power by determining whether the tests can detect a true treatment effect of reasonable size. The power will be calculated as the proportion of times the null hypothesis is correctly rejected under a known simulated treatment effect. Overall, I will judge performance based on the extent to which the tests control for false discoveries, maintain an acceptable Type I error rate, and achieve adequate power to detect meaningful treatment effects.
+
+10. Show and explain how your test performs in regards those properties (at least you will show false positive rate and power). (2--4 paragraphs)
+
+To assess the performance of my tests in terms of false positive rate and power, I will use a permutation test for both the cross-sectional and longitudinal analyses. Permutation tests do not assume a specific distribution of the data and instead rely on resampling the observed data to create a null distribution, making them more robust and reflective of the actual data structure. I will evaluate the false positive rate under the null hypothesis (when no treatment effect exists) and power under an alternative hypothesis (when the treatment effect is present) for both analyses.
+
+For the cross-sectional analysis, I will use a permutation-based approach to assess the difference in total per-student funding between schools with high and low historical HOLC redlining grading. After matching treatment and control groups using OptMatch, I will randomly shuffle the treatment labels while keeping the funding values fixed. This process creates a "null world" where the observed difference in funding is due solely to random assignment. I will compute the test statistics, which is the difference in means, for each permutation and repeat this process 1,000 times to generate a null distribution. The false positive rate is calculated as the proportion of tests in which the observed difference in funding is falsely declared to be due to not random variation under the null. If the permutation test is valid, the false positive rate should be close to 0.05, indicating that the test is correctly rejecting the null hypothesis only 5% of the time when it is true. For the longitudinal analysis, I will use PanelMatch to estimate dynamic treatment effects at multiple time lags (1-year, 2-year, and 3-year after reform). I will shuffle the treatment assignments for each school at each time point while preserving the structure of the funding data. This creates a null distribution of treatment effects for each time lag. I will track how often p-values for the estimated effects are less than 0.05 for each time lag. Since there are multiple time lags, I will use a False Discovery Rate (FDR) correction to control for false positives. The expected rate of false positives after correction should remain at or below 0.05. If this rate is too high, I will increase the number of permutations and evaluate the quality of covariate balance achieved during matching.
+
+To compute power, I will introduce a known treatment effect into the data. To simulate a known treatment effect, I will add a hypothetical increase in per-student funding (e.g., \$250) for schools identified as treated (those with high historical redlining grading). This means that treated schools will have funding values drawn from a normal distribution with a mean of \$250 more than the mean total per-student funding for schools with low historical redlining grading. This effect size reflects plausible policy changes observed in real-world educational funding reforms. Indeed, several hypothetical situations of an increase of \$100 and \$500 will also be tested. By introducing the hypothetical treatment effect, I can assess the entire process, including matching, permutation,and FDR correction, as it would be applied in the real analysis. The proportion of times the p-value is less than 0.05 represents the power of the test. For instance, if 850 out of 1,000 simulated datasets yields p \< 0.05, then power is 85%. If power is below 80%, I will modify the matching process such as changing to stricter calipers, increase the number of control schools, or increase the total sample size to ensure sufficient power to detect smaller effect sizes. For the longitudinal analysis, I will apply an FDR correction to control for multiple testing since multiple time lags are tested simultaneously. If the power for any of the time lags is less than 80%, I will refine the matching criteria, increase the number of control schools, or adjust the window of the pre-treatment period in PanelMatch.
+
+The table below illustrates the expected performance of the test in terms of false positive rate and power. For cross-sectional analysis, I anticipate a false positive rate of 0.05 and power ranging from 70% for a \$100 increase to 95% for a \$500 increase in per-student funding. For longitudinal analysis, power is calculated for treatment effect as 1-year, 2-year, and 3-year lags. Power is expected to increase at the 2-year mark (when policies take effect) but may decline at the 3-year lag. These values are hypothetical and subject to change once real data is available.
+
+```{r falsepositiverateandpower}
+#install.packages("kableExtra")
+library(kableExtra)
+
+# Create a summary table for false positive rate and power
+table_data <- data.frame(
+  AnalysisType = c('Cross-Sectional', 'Cross-Sectional', 'Cross-Sectional',
+                   'Longitudinal (1-Year Lag)', 'Longitudinal (1-Year Lag)', 'Longitudinal (1-Year Lag)',
+                   'Longitudinal (2-Year Lag)', 'Longitudinal (2-Year Lag)', 'Longitudinal (2-Year Lag)',
+                   'Longitudinal (3-Year Lag)', 'Longitudinal (3-Year Lag)', 'Longitudinal (3-Year Lag)'),
+  EffectSize = c(100, 250, 500, 100, 250, 500, 100, 250, 500, 100, 250, 500),
+  FalsePositiveRate = c(0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05),
+  Power = c(0.70, 0.85, 0.95, 
+            0.60, 0.80, 0.90, 
+            0.65, 0.85, 0.92, 
+            0.50, 0.70, 0.85)
+)
+
+# Create a clean kable table with kableExtra
+kable(
+  table_data, 
+  format = "html", 
+  caption = "Summary Table of False Positive Rate and Power",
+  col.names = c("Analysis Type", "Effect Size ($)", "False Positive Rate", "Power"),
+  align = "c"
+) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = TRUE) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(4,  bold = TRUE)
+```
+
+To visualize the relationship between power and effect size, I will generate a power curve. The x-axis will display the effect size (from \$100 to \$800), and the y-axis will display power (from 0% to 100%). The curve will show how power increases as the effect size increases. I expect power to be low for small effects (like \$100) but to exceed 80% for effects of \$250 or larger. I will generate separate power curves for cross-sectional analysis and for longitudinal effects at 1-year, 2-year, and 3-yer lags. This visualization will demonstrate my ability to detect effects of varying sizes at different time points.
+
+```{r powercurve}
+# Simulate power for different effect sizes
+effect_sizes <- seq(100, 800, by=50) # Effect sizes from $100 to $800
+cross_sectional_power <- 1 - exp(-0.01 * (effect_sizes - 100)) # Hypothetical power curve for cross-sectional analysis
+lag1_power <- 1 - exp(-0.008 * (effect_sizes - 100)) # Hypothetical power curve for 1-year lag
+lag2_power <- 1 - exp(-0.009 * (effect_sizes - 100)) # Hypothetical power curve for 2-year lag
+lag3_power <- 1 - exp(-0.007 * (effect_sizes - 100)) # Hypothetical power curve for 3-year lag
+
+# Combine the data into a single dataframe
+power_df <- data.frame(
+  EffectSize = rep(effect_sizes, 4),
+  Power = c(cross_sectional_power, lag1_power, lag2_power, lag3_power),
+  AnalysisType = factor(rep(c('Cross-Sectional', '1-Year Lag', '2-Year Lag', '3-Year Lag'), each = length(effect_sizes)))
+)
+
+# Create the power curve plot
+ggplot(power_df, aes(x = EffectSize, y = Power, color = AnalysisType, linetype = AnalysisType)) +
+  geom_line(size = 1) +
+  labs(
+    title = "Power Curve for Different Effect Sizes",
+    x = "Effect Size ($)",
+    y = "Power",
+    color = "Analysis Type",
+    linetype = "Analysis Type"
+  ) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, 1)) +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "bottom")
+```
+
+11. What statistical estimators do you plan to use? Explain why you chose these estimators. Especially explain what is your target of estimation --- what is the estimand? (1 paragraph)
+
+For the cross-sectional analysis, I will use the difference in means estimator to estimate the average treatment effect of historical redlining grading on total per-student funding. This estimator measures the difference in mean per-student funding between treatment and control groups after matching. For the longitudinal analysis, I will use the dynamic treatment effect estimator from PanelMatch, which estimates the average treatment effect on the treated for each post-reform time lag. This estimator accounts for dynamic, time-varying treatments and allows me to track how the treatment effect evolves over time. My estimand is the causal effect of redlining-induced disparities on total per-student funding, measured cross-sectionally as a single-period difference and longitudinally as a dynamic multi-period effect.
+
+12. Explain how you will judge the performance of those estimators (especially bias and MSE)? (1 paragraph)
+
+I will judge the performance of the estimators based on their bias and mean squared error (MSE) using a permutation-based approach. To assess bias, I will generate a "null world" by randomly shuffling the treatment labels while keeping the outcome (total per-student funding) fixed. This process will be repeated 1,000 times, and for each permutation, I will calculate the estimated treatment effect. Bias is computed as the difference between the average of these estimated treatment effects and the true treatment effect, which should be zero in the null world. If the estimator is unbiased, the average estimated treatment effect should be close to zero. To assess MSE, I will calculate the squared difference between each of the 1,000 estimated treatment effects and the true treatment effect, and then take the average of these squared differences. Since MSE incorporates both bias and variance, it provides a comprehensive measure of the estimator's overall performance. Additionally, I will evaluate the estimator's performance under a known treatment effect scenario by introducing a hypothetical effect (e.g., a \$250 increase in per-student funding) into the outcome variable before matching. I will repeat the permutation process, calculate the difference between the estimated and known treatment effects, and compute both bias and MSE under this known effect. If bias or MSE is large, I will refine my matching approach, adjust model specifications, or improve covariate balance to ensure accurate and reliable estimation of the causal effects of redlining on total per-student funding.
+
+13. Show and explain how your estimator performs in regards those properties (at least bias and MSE). (2--4 paragraphs)
+
+To assess and demonstrate how the estimator performs in terms of bias and MSE, I will use a permutation-based approach to evaluate the estimator under two key scenarios: a null world (where no treatment effect exists) and a known effect world (where I introduce a known treatment effect, such as a \$250 increase in per-student funding). In the null world, I will randomly shuffle the treatment labels while keeping the outcome (total per-student funding) fixed. This process ensures that there is no systematic link between treatment status and the outcome, simulating a world where the true treatment effect is zero. For each of the 1,000 permutations, I will re-estimate the treatment effect and compute bias as the difference between the average estimated treatment effect and the true treatment effect (zero). If the estimator is unbiased, the average of the estiamted effects should be close to zero. I will also compute MSE in the null world using the following formula:
+
+$$
+\text{MSE} = \frac{1}{N} \sum_{i=1}^N (\hat{\tau}_i - 0)^2
+$$ where $\hat{\tau}_i$ is the estimated treatment effect for permutation $i$, and $N$ is the total number of permutations (1,000 in this case). Since MSE captures both bias and variance, it provides a more comprehensive view of the estimator's performance than bias alone. If the bias or MSE in the null world is large, it may indicate problems with matching balance or other sources of systematic error, prompting adjustments to the OptMatch or PanelMatch procedures.
+
+For the known effect world, I will introduce a known treatment effect, such as a \$250 increase in per-student funding into the outcome variable for treated schools while keeping control schools unchanged. This approach simulates a world where the true treatment effect is known, allowing me to measure how well the estimator can recover this known value. For each permutation (1,000 iterations), I will re-estimate the treatment effect and compute bias as the difference between the average estimated effect and the known treatment effect (\$250). If the bias is small, it indicates that the estimator can accurately identify the true treatment effect. The formula for bias in this context is: $$
+\text{Bias} = \frac{1}{N} \sum_{i=1}^N (\hat{\tau}_i - 250)
+$$ Additionally, I will compute MSE using the following formula:
+
+$$
+\text{MSE} = \frac{1}{N} \sum_{i=1}^N (\hat{\tau}_i - 250)^2
+$$ where $\hat{\tau}_i$ is the estimated treatment effect for permutation $i$, and $N$ is 1,000. The MSE in this context reflects both the bias and variability of the estimator when it is tasked with recovering a known treatment effect. If the MSE is large, it may be due to high bias, large variance, or both. This could signal issues with matching quality of inadequate control for confounding factors. If the MSE is high, I will refine my pre-treatment period selection in PanelMatch and explore alternative matching parameters in OptMatch.
+
+To show how bias and MSE change in these two scenarios, I will create two key visualizations. First I will present a bias plot that visualizes the distribution of estimated treatment effects for both the null world and the known effect world. This plot will be a histogram where the x-axis shows the range of estimated treatment effects and the y-axis shows the frequency of each value. For the null world, the distribution should be centered around zero if the estimator is unbiased. For the known effect world, the distribution should be centered around the known treatment effect (\$250). Vertical reference lines will be drawn at 0 (null world) and 250 (known effect world) to highlight where the true treatment effects lie. If the distributions are shifted away from these lines, it would signal bias.
+
+```{r etedistribution}
+# Simulated estimated treatment effects for null and known effect worlds
+n_permutations <- 1000
+null_world_effects <- rnorm(n_permutations, mean = 0, sd = 10) # Null world (true effect = 0)
+known_world_effects <- rnorm(n_permutations, mean = 250, sd = 10) # Known effect world (true effect = 250)
+
+# Create a dataframe for plotting
+bias_df <- data.frame(
+  TreatmentEffect = c(null_world_effects, known_world_effects),
+  World = rep(c('Null World (0 effect)', 'Known Effect World (250 effect)'), each = n_permutations)
+)
+
+# Bias plot (histogram)
+ggplot(bias_df, aes(x = TreatmentEffect, fill = World)) +
+  geom_histogram(bins = 30, position = 'identity', alpha = 0.6) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "blue", size = 1) +
+  geom_vline(xintercept = 250, linetype = "dashed", color = "red", size = 1) +
+  labs(
+    title = "Distribution of Estimated Treatment Effects",
+    x = "Estimated Treatment Effect",
+    y = "Frequency",
+    fill = "Scenario"
+  ) +
+  theme_minimal(base_size = 14)
+```
+
+Second, I will create an MSE bar plot that compares MSE for each analysis type (cross sectional, 1-year lag, 2-year lag, and 3-year lag) across the two scenarios (null world and known effect world). This plot will have two bars for each analysis type --- one bar representing MSE for the null world and another bar for the known effect world. The MSE bar plot will make it easy to see if certain analysis types have higher MSE than others. This visualization will also help identify if certain analysis types perform better in recovering known treatment effects. If the MSE for the null world is unusually large, it may signal that covariate imbalance is inflating variance, and I would consider adjusting the matching procedure to improve balance. If MSE for the known effect world is large, it could suggest that the estimator is unable to recover true treatment effects, prompting further refinement of OptMatch or PanelMatch parameters.
+
+```{r mseplot}
+#install.packages("tidyr")
+library(tidyr)
+
+# Hypothetical MSE data for cross-sectional and longitudinal analysis
+mse_data <- data.frame(
+  AnalysisType = c('Cross-Sectional', '1-Year Lag', '2-Year Lag', '3-Year Lag'),
+  MSE_Null_World = c(15, 20, 18, 25),
+  MSE_Known_Effect_World = c(10, 12, 14, 18)
+)
+
+# Reshape MSE data for plotting
+mse_long <- mse_data %>%
+  pivot_longer(cols = c(MSE_Null_World, MSE_Known_Effect_World), 
+               names_to = "World", 
+               values_to = "MSE")
+
+# MSE barplot
+ggplot(mse_long, aes(x = AnalysisType, y = MSE, fill = World)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(
+    title = "Mean Squared Error (MSE) for Null World and Known Effect World",
+    x = "Analysis Type",
+    y = "Mean Squared Error (MSE)",
+    fill = "Scenario"
+  ) +
+  theme_minimal(base_size = 14)
+```
+
+By combining the bias plot and MSE bar plot, I will provide a comprehensive view of how the estimator performs in both null and non-null contexts, allowing me to identify areas for potential improvement in the matching and estimation process.
+
+14. Make one mock figure or table of the kind you plan to make when you use the actual outcome. Interpret the results of the mock analysis as if it were the real analysis. Saying something like, "If the real outcome were as I have simulated it, then the following table/figure would mean such and so about the theory." (1 paragraph)
+
+```{r mocktable}
+# Create mock table data
+table_data <- data.frame(
+  AnalysisType = c('Cross-Sectional', '1-Year Lag', '2-Year Lag', '3-Year Lag'),
+  EstimatedATE = c("-$160", "-$150", "-$155", "-$158"),
+  CI95 = c("(-$210, -$110)", "(-$200, -$100)", "(-$205, -$105)", "(-$208, -$108)"),
+  PValue = c("< 0.01", "< 0.01", "< 0.01", "< 0.01")
+)
+
+# Create and format the table
+kable(
+  table_data, 
+  format = "html", 
+  caption = "Table 1: Estimated ATE, 95% Confidence Intervals, and P-values for Cross-Sectional and Longitudinal Analyses",
+  col.names = c("Analysis Type", "Estimated ATE ($)", "95% CI", "P-Value"),
+  align = "c"
+) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = TRUE) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2, bold = TRUE) %>%
+  column_spec(4, bold = TRUE)
+```
+
+If the real outcome were as I have simulated above, the table would suggest that schools with higher levels of historical redlining grading experience persistently lower total per-student funding compared to schools with lower grading. The cross-sectional analysis reveals that on average, schools with higher redlining grading operate with \$160 less per student compared to their matched control schools. The 95% confidence interval for this effect ranges from -\$210 to -\$110, and the p-value is below 0.01, indicating that this difference is not attributable to random chance.
+
+The longitudinal analysis reinforces the path dependence theory, as the estimated treatment effects remain consistent over time. For example, at the 1-year lag, schools with higher redlining grading, have, on average, \$150 less per-student funding compared to similar schools with lower grading. Importantly, the effects at the 2-year lag (-\$155) and 3-year lag (-\$158) are almost identical to the cross-sectional effects, with no sign of significant improvement. This pattern suggests that, despite equity-focused reforms like SBB (2013) and EBF (2017), the historical "lock-in" effects of redlining continue to persist. If reforms like SBB and EBF were successful in reducing funding disparities, we would expect to see the treatment effects become smaller or non-significant at the later time points. However, the fact that the effects remain stable and significant suggests that these reforms were not sufficient to break the structural continuity created by historical redlining.
+
+These results directly support the path dependency theory, which posits that early institutional decisions create long-term, self-reinforcing mechanisms that are difficult to disrupt. The stability of the treatment effect over time suggests that policy interventions like SBB and EBF did not meaningfully reduce disparities in total per-student funding. If the real-world results matched this mock analysis, it would provide strong evidence that educational funding disparities caused by historical redlining are structurally entrenched and difficult to reverse, even in the face of modern reforms. This highlights the need for more radical policy interventions that address the root causes of inequality, rather than relying on incremental reform-based approaches.
+
+15. Include a code appendix and a link to the github repository for this paper.
+
+```{r appendix,eval=FALSE,echo=TRUE,results=verbatim}
+<<hypotheticalcovariatebalance>>
+<<identificationflowchart>>
+<<hypotheticalimpactofreforms>>
+<<falsepositiverateandpower>>
+<<powercurve>>
+<<etedistribution>>
+<<mseplot>>
+<<mocktable>>
+```
+
+https://github.com/nadinadikim/ps531_nadiakim.git
+
+16. Include references with appropriate in-text citations.
+
+# References
